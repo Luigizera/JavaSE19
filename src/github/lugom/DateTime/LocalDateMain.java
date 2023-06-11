@@ -21,7 +21,7 @@ public class LocalDateMain {
         Instant instantParse = Instant.parse("2023-06-10T23:32:00.00-03:00");
 
         LocalDate dateParseFormatter = LocalDate.parse("10/06/2023",dateFormatter);
-        LocalDateTime dateTimeParseFormatter = LocalDateTime.parse("2023-06-10T23:32:00", dateTimeFormatter);
+        LocalDateTime dateTimeParseFormatter = LocalDateTime.parse("10/06/2023 23:32", dateTimeFormatter);
 
         LocalDate dateOf = LocalDate.of(2023, 06, 10);
 
