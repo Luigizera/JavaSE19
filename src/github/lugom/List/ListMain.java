@@ -9,12 +9,14 @@ public class ListMain
 {
     public static void main(String[] args)
     {
+        String arrayName = "arrayTeste";
+        String linkedName = "linkedTeste";
         List<String> arrayList = new ArrayList<>();
         List<String> linkedList = new LinkedList<>();
 
-        for(int i = 0; i < 6; i++)
+        for(int i = 0; i <= 5; i++)
         {
-            arrayList.add("arrayTeste" + i);
+            arrayList.add(arrayName + i);
         }
 
         for(String x : arrayList)
@@ -29,9 +31,9 @@ public class ListMain
             System.out.println("\n" + x + "\n");
         }
 
-        for(int i = 0; i < 6; i++)
+        for(int i = 0; i <= 5; i++)
         {
-            linkedList.add("linkedTeste" + i);
+            linkedList.add(linkedName + i);
         }
 
         for(String x : linkedList)
