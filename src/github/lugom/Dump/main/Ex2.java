@@ -8,7 +8,6 @@ public class Ex2
 	{
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
 		double largura = 0;
 		double comprimento = 0;
 		double metroQuadrado = 0;

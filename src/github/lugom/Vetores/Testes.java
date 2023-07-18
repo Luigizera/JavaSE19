@@ -1,4 +1,4 @@
-package github.lugom.Dump.main;
+package github.lugom.Vetores;
 
 import java.util.Locale;
 import java.util.Scanner;
