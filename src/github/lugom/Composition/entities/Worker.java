@@ -2,6 +2,7 @@ package github.lugom.Composition.entities;
 
 import github.lugom.Composition.enums.WorkerLevel;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -68,17 +69,14 @@ public class Worker
     public double income(int year, int month)
     {
         double sum = baseSalary;
-        Calendar cal = Calendar.getInstance();
         for (HourContract c : contracts)
         {
-            cal.setTime(c.getDate());
-            int c_year = cal.get(Calendar.YEAR);
-            int c_month = 1 + cal.get(Calendar.MONTH);
+            int c_year = c.getDate().getYear();
+            int c_month = c.getDate().getMonthValue();
             if (year == c_year && month == c_month)
             {
                 sum += c.totalValue();
             }
-
         }
         return sum;
     }
