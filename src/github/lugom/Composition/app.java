@@ -6,7 +6,6 @@ import github.lugom.Composition.entities.Worker;
 import github.lugom.Composition.enums.WorkerLevel;
 
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
@@ -17,13 +16,13 @@ public class app
     {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Worker worker = new Worker();
-        String departmentName = "";
-        String workerName = "";
-        String workerLevel = "";
-        double workerSalary = 0D;
-        int numContracts = 0;
-        String date = "";
+        Worker worker;
+        String departmentName;
+        String workerName;
+        String workerLevel;
+        double workerSalary;
+        int numContracts;
+        String date;
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         DateTimeFormatter dateFormatterMonthYear = DateTimeFormatter.ofPattern("MM/yyyy");
 
