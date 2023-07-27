@@ -1,4 +1,4 @@
-package github.lugom.Composition.entities;
+package github.lugom.Composition.Ex1.entities;
 
 public class Department
 {

@@ -1,4 +1,4 @@
-package github.lugom.Composition.enums;
+package github.lugom.Composition.Ex1.enums;
 
 public enum WorkerLevel
 {

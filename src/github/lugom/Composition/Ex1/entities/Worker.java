@@ -1,10 +1,8 @@
-package github.lugom.Composition.entities;
+package github.lugom.Composition.Ex1.entities;
 
-import github.lugom.Composition.enums.WorkerLevel;
+import github.lugom.Composition.Ex1.enums.WorkerLevel;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class Worker

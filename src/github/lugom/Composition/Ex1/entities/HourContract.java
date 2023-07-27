@@ -1,7 +1,6 @@
-package github.lugom.Composition.entities;
+package github.lugom.Composition.Ex1.entities;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class HourContract
 {

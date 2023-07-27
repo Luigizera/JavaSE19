@@ -1,9 +1,9 @@
-package github.lugom.Composition;
+package github.lugom.Composition.Ex1;
 
-import github.lugom.Composition.entities.Department;
-import github.lugom.Composition.entities.HourContract;
-import github.lugom.Composition.entities.Worker;
-import github.lugom.Composition.enums.WorkerLevel;
+import github.lugom.Composition.Ex1.entities.Department;
+import github.lugom.Composition.Ex1.entities.HourContract;
+import github.lugom.Composition.Ex1.entities.Worker;
+import github.lugom.Composition.Ex1.enums.WorkerLevel;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
