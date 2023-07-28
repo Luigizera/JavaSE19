@@ -6,7 +6,7 @@ import github.lugom.Composition.Ex2.entities.Post;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class app
+public class Program
 {
     public static void main(String[] args)
     {
