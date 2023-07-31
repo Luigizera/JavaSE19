@@ -3,6 +3,8 @@ package github.lugom.Composition.Ex3.entities;
 import github.lugom.Composition.Ex3.enums.OrderStatus;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Order
@@ -11,15 +13,14 @@ public class Order
     private LocalDateTime moment = LocalDateTime.now();
     private OrderStatus orderStatus;
 
-    private List<OrderItem> orderItems;
+    private List<OrderItem> orderItems = new ArrayList<>();
 
-    public Order() {
-    }
+    public Order(){}
 
-    public Order(LocalDateTime moment, OrderStatus orderStatus, List<OrderItem> orderItems) {
+    public Order(Customer customer, LocalDateTime moment, OrderStatus orderStatus) {
+        this.customer = customer;
         this.moment = moment;
         this.orderStatus = orderStatus;
-        this.orderItems = orderItems;
     }
 
     public Customer getCustomer() {
@@ -56,7 +57,15 @@ public class Order
         orderItems.remove(item);
     }
 
-    public double total()
+    public void getItems()
+    {
+        for(OrderItem c : orderItems)
+        {
+            System.out.println(c.toString());
+        }
+    }
+
+    public double getTotal()
     {
         double total = 0D;
         for(OrderItem c : orderItems)
