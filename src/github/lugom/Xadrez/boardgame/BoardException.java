@@ -1,0 +1,7 @@
+package github.lugom.Xadrez.boardgame;
+
+public class BoardException extends RuntimeException{
+    public BoardException(String msg) {
+        super(msg);
+    }
+}
