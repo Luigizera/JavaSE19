@@ -1,6 +1,8 @@
 package github.lugom.Xadrez.chess;
 
-public class ChessException extends RuntimeException{
+import github.lugom.Xadrez.boardgame.BoardException;
+
+public class ChessException extends BoardException {
     public ChessException(String msg){
         super(msg);
     }
