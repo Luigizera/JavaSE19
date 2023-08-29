@@ -1,5 +1,6 @@
 package github.lugom.Xadrez.application;
 
+import github.lugom.Xadrez.chess.ChessMatch;
 import github.lugom.Xadrez.chess.ChessPiece;
 import github.lugom.Xadrez.chess.ChessPosition;
 import github.lugom.Xadrez.chess.Color;
@@ -44,6 +45,14 @@ public class UI {
     public static void clearScreen(){
         System.out.println("\033[H\033[2J");
         System.out.flush();
+    }
+
+    public static void printMatch(ChessMatch chessMatch)
+    {
+        printBoard(chessMatch.getPieces());
+        System.out.println();
+        System.out.println("Turn: " + chessMatch.getTurn());
+        System.out.println("Waiting Player: " + chessMatch.getCurrentPlayer());
     }
 
     public static void printBoard(ChessPiece[][] pieces)
